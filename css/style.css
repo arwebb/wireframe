@@ -134,7 +134,7 @@ iframe{
 /* Staff about blocks and fade bios */
 
 #staff1Box{
-    width: 250px;
+    width: 16.5%;
     height: auto;
     background-color: white;
     margin-left: 24%;
@@ -145,7 +145,7 @@ iframe{
 }
 
 #staff2Box{
-    width: 250px;
+    width: 16.5%;
     height: auto;
     background-color: white;
     margin-left: 15%;
@@ -174,12 +174,12 @@ iframe{
 
 #staff1{
     height: auto;
-    width: 250px;
+    width: 100%;
 }
 
 #staff2{
     height: auto;
-    width: 250px;
+    width: 100%;
 }
 
 .scrollBox{
@@ -197,6 +197,7 @@ iframe{
     color: white;
     font-size: 1em;
     font-family: 'Lora', serif;
+    padding: 10px;
 }
 
 .staff{
