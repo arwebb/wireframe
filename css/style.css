@@ -1,8 +1,9 @@
 html, body{
     margin: 0; padding: 0;
 }
+
 body{
-    background-color: gray;
+    background-color: #4f4f4f;
 }
 
 h1{
@@ -13,13 +14,21 @@ h1{
     font-size: 5em;
 }
 
+#safe{
+    color: #81b73e;
+}
+
 h2{
     margin-left: 10px;
     padding-top: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 p{
     margin-left: 10px;
+    color: white;
+    font-family: 'Lora', serif;
 }
 
 h3{
@@ -27,6 +36,13 @@ h3{
     font-family: 'Work Sans', sans-serif;
     color: white;
     font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
 }
 
 /* Navigation bar */
@@ -39,9 +55,11 @@ h3{
     float: right; 
     list-style-type: none;
 }
+
 .navLink{
     display: inline;
     padding-right: 30px;
+    font-family: 'Lora', serif;
 }
 
 a{
@@ -58,7 +76,7 @@ a:hover{
 /* Landing page */
 #landing{
     height: 620px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 /* Video */
@@ -87,18 +105,210 @@ iframe{
 
 /* About */
 #about{
-    height: 600px;
-    background-color: red;
+    text-align: center;
+    height: auto;
+    padding-bottom: 100px;
+    margin: 0px;
+    background-color: #2d2d2d;
+    padding-top: 10px;
+}
+
+#description{
+    width: 40%;
+    height: auto;
+    display: block; 
+    margin-left: 30%;
+    padding: 15px;
+    background-color: rgba(33, 33, 33, 0.3);
+}
+
+#staffAbout{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    display: block;
+    
+}
+
+/* Staff about blocks and fade bios */
+
+#staff1Box{
+    width: 250px;
+    height: auto;
+    background-color: rgba(89, 89, 89, 0.3);
+    margin-left: 24%;
+    padding: 15px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+#staff2Box{
+    width: 250px;
+    height: auto;
+    background-color: rgba(89, 89, 89, 0.3);
+    margin-left: 15%;
+    padding: 15px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+#staff1Box:hover .staff{
+    opacity: 0.3;
+}
+
+#staff2Box:hover .staff{
+    opacity: 0.3;
+}
+
+#staff1Box:hover .scrollBox{
+    opacity: 1;    
+}
+
+
+#staff2Box:hover .scrollBox{
+    opacity: 1;    
+}
+
+#staff1{
+    height: auto;
+    width: 250px;
+}
+
+#staff2{
+    height: auto;
+    width: 250px;
+}
+
+.scrollBox{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.scrollText{
+    background-color: rgba(33, 33, 33, 0.3);
+    color: white;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+}
+
+.staff{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+h5{
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.7em;
+}
+
+#Ned{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#Ted{
+    font-family: 'Rock Salt', cursive;
 }
 
 /* Services */
 #services{
-    height: 600px;
-    background-color: blue;
+    height: auto;
+    background-color: #4f4f4f;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
+#servicesBox{
+    height: auto;
+    width: 30%;
+    background-color: rgba(33, 33, 33, 0.3);
+    display: block; 
+    margin-left: 33.7%;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+button{
+    margin: 0 30px 30px 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: none;
+    padding: 8px 25px 8px 25px;
+}
+
+button #play{
+    background: url("http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Media-play-icon.png" no-repeat);
+    width: 20px;
+    height: 20px;
+}
+
+#apple{
+    background-image: url("http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-Mac-App-Store-icon.png" no-repeat)
 }
 
 /* Contact */
 #contact{
-    height: 600px;
-    background-color: purple;
+    height: auto;
+    background-color: #7c7c7c;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+/* Contact form */
+
+form{
+    color: white;
+    text-align: center;
+}
+
+input[type=text]{
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;'
+}
+
+input[type=text]:focus{
+    border: 1px solid #81b73e;
+}
+
+input[type=reset]{
+    background-color: rgba(33, 33, 33, 0.3);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+
+}
+
+input[type=submit]{
+    background-color: #81b73e;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+textarea{
+    width: 40%;
+    height: 150px;
+}
+
+textarea:focus{
+    border: 1px solid #81b73e;
 }
