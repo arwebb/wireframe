@@ -14,9 +14,6 @@ h1{
     font-size: 5em;
 }
 
-#safe{
-    color: #81b73e;
-}
 
 h2{
     margin-left: 10px;
@@ -43,6 +40,10 @@ h4{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
+}
+
+.alt{
+    color: #94d149
 }
 
 /* Navigation bar */
@@ -109,7 +110,7 @@ iframe{
     height: auto;
     padding-bottom: 100px;
     margin: 0px;
-    background-color: #2d2d2d;
+    background-color: #7c7c7c;
     padding-top: 10px;
 }
 
@@ -119,11 +120,11 @@ iframe{
     display: block; 
     margin-left: 30%;
     padding: 15px;
-    background-color: rgba(33, 33, 33, 0.3);
+    background-color: rgba(73, 73, 73, 0.3);
 }
 
 #staffAbout{
-    margin-top: 100px;
+    margin-top: 50px;
     height: 400px;
     width: 100%;
     display: block;
@@ -135,7 +136,7 @@ iframe{
 #staff1Box{
     width: 250px;
     height: auto;
-    background-color: rgba(89, 89, 89, 0.3);
+    background-color: white;
     margin-left: 24%;
     padding: 15px;
     display: inline;
@@ -146,7 +147,7 @@ iframe{
 #staff2Box{
     width: 250px;
     height: auto;
-    background-color: rgba(89, 89, 89, 0.3);
+    background-color: white;
     margin-left: 15%;
     padding: 15px;
     display: inline;
@@ -155,7 +156,7 @@ iframe{
 }
 
 #staff1Box:hover .staff{
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 #staff2Box:hover .staff{
@@ -192,7 +193,7 @@ iframe{
 }
 
 .scrollText{
-    background-color: rgba(33, 33, 33, 0.3);
+    background-color: rgba(33, 33, 33, 0.5);
     color: white;
     font-size: 1em;
     font-family: 'Lora', serif;
@@ -208,7 +209,7 @@ iframe{
 h5{
     margin-top: 40px;
     margin-bottom: 0;
-    color: white;
+    color: black;
     font-size: 1.7em;
 }
 
@@ -238,6 +239,7 @@ h5{
     padding: 20px;
     margin-bottom: 60px;
 }
+
 
 button{
     margin: 0 30px 30px 30px;
