@@ -1,3 +1,5 @@
+/* Styles shared between all pages */
+
 html, body{
     margin: 0; padding: 0;
 }
@@ -6,16 +8,9 @@ body{
     background-color: #4f4f4f;
 }
 
-h1{
-    text-align: center;
-    color: white;
-    padding-top: 200px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 5em;
-}
-
 
 h2{
+    text-align: center;
     margin-left: 10px;
     padding-top: 40px;
     color: white;
@@ -25,7 +20,7 @@ h2{
 p{
     margin-left: 10px;
     color: white;
-    font-family: 'Lora', serif;
+    font-family: 'Khula', sans-serif;
 }
 
 h3{
@@ -33,6 +28,7 @@ h3{
     font-family: 'Work Sans', sans-serif;
     color: white;
     font-size: 2em;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -42,6 +38,7 @@ h4{
     font-size: 1.4em;
 }
 
+/* Call to action/text highlight color */
 .alt{
     color: #94d149
 }
@@ -49,6 +46,7 @@ h4{
 /* Navigation bar */
 #navbar{
     height: 50px;
+    background-color: rgba(90, 91, 91);
     background-color: rgba(90, 91, 91, 0.4);
     margin-top: 0%;
 }
@@ -60,17 +58,17 @@ h4{
 .navLink{
     display: inline;
     padding-right: 30px;
-    font-family: 'Lora', serif;
+    font-family: 'Khula', sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #a4a6a8;
+    color: white;
     transition: 1s;
 }
 
 a:hover{
-    color: white;
+    color: #94d149;
     transition: 1s;
 }
 
@@ -78,6 +76,25 @@ a:hover{
 #landing{
     height: 620px;
     margin-bottom: 0px;
+}
+
+/* Landing page title only */
+#landing h1{
+    color: white;
+    padding-top: 12%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5em;
+    font-size: 5vw;
+}
+
+#titleText{
+    text-align: center;
+    background-color: rgb(90, 91, 91);
+    background-color: rgba(90, 91, 91, 0.4);
+    margin-top: 10%;
+    margin-left: 32%;
+    height: 55%;
+    width: 35%;
 }
 
 /* Video */
@@ -120,18 +137,20 @@ iframe{
     display: block; 
     margin-left: 30%;
     padding: 15px;
+    background-color: rgb(73, 73, 73);
     background-color: rgba(73, 73, 73, 0.3);
 }
 
 #staffAbout{
     margin-top: 50px;
+    margin-bottom: 60px;
     height: 400px;
     width: 100%;
     display: block;
     
 }
 
-/* Staff about blocks and fade bios */
+/* Staff polaroids and hover descriptions */
 
 #staff1Box{
     width: 16.5%;
@@ -169,7 +188,7 @@ iframe{
 
 
 #staff2Box:hover .scrollBox{
-    opacity: 1;    
+    opacity: 1;
 }
 
 #staff1{
@@ -193,10 +212,11 @@ iframe{
 }
 
 .scrollText{
+    background-color: rgb(33, 33, 33);
     background-color: rgba(33, 33, 33, 0.5);
     color: white;
     font-size: 1em;
-    font-family: 'Lora', serif;
+    font-family: 'Khula', sans-serif;
     padding: 10px;
 }
 
@@ -207,7 +227,7 @@ iframe{
     backface-visibility: hidden;
 }
 
-h5{
+h5 /* staff names */{
     margin-top: 40px;
     margin-bottom: 0;
     color: black;
@@ -222,7 +242,7 @@ h5{
     font-family: 'Rock Salt', cursive;
 }
 
-/* Services */
+/* Services, including app description and Play/App store links */
 #services{
     height: auto;
     background-color: #4f4f4f;
@@ -234,6 +254,7 @@ h5{
 #servicesBox{
     height: auto;
     width: 30%;
+    background-color: rgb(33, 33, 33);
     background-color: rgba(33, 33, 33, 0.3);
     display: block; 
     margin-left: 33.7%;
@@ -241,7 +262,7 @@ h5{
     margin-bottom: 60px;
 }
 
-
+/* Play and app store buttons */
 button{
     margin: 0 30px 30px 30px;
     font-family: 'Roboto', sans-serif;
@@ -250,14 +271,22 @@ button{
     padding: 8px 25px 8px 25px;
 }
 
-button #play{
-    background: url("http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Media-play-icon.png" no-repeat);
-    width: 20px;
-    height: 20px;
+button a{
+    color: black;
 }
 
-#apple{
-    background-image: url("http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-Mac-App-Store-icon.png" no-repeat)
+button #play{
+    background: url("http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Media-play-icon.png" no-repeat 0 -4px);
+    float: left;
+    width: 10px;
+    height: 10px;
+}
+
+button #apple{
+    background: url("http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-Mac-App-Store-icon.png" no-repeat 0 -4px);
+    float: left;
+    width: 10px;
+    height: 10px;
 }
 
 /* Contact */
@@ -281,7 +310,7 @@ input[type=text]{
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
-    font-family: 'Lora', serif;'
+    font-family: 'Khula', sans-serif;
 }
 
 input[type=text]:focus{
@@ -289,6 +318,7 @@ input[type=text]:focus{
 }
 
 input[type=reset]{
+    background-color: rgb(33, 33, 33);
     background-color: rgba(33, 33, 33, 0.3);
     border: none;
     color: white;
@@ -314,4 +344,106 @@ textarea{
 
 textarea:focus{
     border: 1px solid #81b73e;
+}
+
+
+/* Sponsors page */
+
+/* Header pic and title */
+#sponsorPic{
+    width: 100%;
+    margin-top: -100px;
+    padding-top: 0;
+    border-top: 0;
+    height: 400px;
+    background-image: url("https://i.ytimg.com/vi/Eo6SMws4MDY/maxresdefault.jpg");
+    background-size: cover;
+}
+
+#sponsors h1{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+}
+
+#sponsorTitle{
+    margin-top: -250px;
+    padding-top: 0;
+}
+
+
+/* Introductory card */
+#sponsors h2{
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    color: #94d149;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sponsorIntro{
+    text-align: center;
+    width: 230px;
+    height: 150px;
+    background-color: rgb(33, 33, 33);
+    background-color: rgba(33, 33, 33, 0.3);
+    margin-left: 40%;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Logo div (note: if div is shorter than any one logo's lowest hover point the page will scroll down each hover cycle) */
+#sponsorLogos{
+    width: 100%;
+    height: 300px;
+}
+
+/* Individual logos */
+.sponsorLogo{
+    width: 10%;
+    border: solid 3px #94d149;
+    border-radius: 50%;
+    transition: 1s;
+    position: absolute;
+}
+
+.sponsorLogo:hover{
+    width: 15%;
+    transition: 1s;
+}
+
+#logo1{
+    margin-left: 10%;
+    margin-top: 35%;
+    -webkit-animation: orb-hover-up-and-down 2s alternate ease-in-out infinite;
+}
+
+#logo2{
+    margin-left: 30%;
+    margin-top: 40%;
+      -webkit-animation: orb-hover-up-and-down 1.5s alternate ease-in-out infinite;
+}
+
+#logo3{
+    margin-left: 55%;
+    margin-top: 37%;
+    -webkit-animation: orb-hover-up-and-down 2.1s alternate ease-in-out infinite;
+}
+
+#logo4{
+    margin-left: 80%;
+    margin-top: 35%;
+    -webkit-animation: orb-hover-up-and-down 2.5s alternate ease-in-out infinite;
+}
+
+/* Floating orb function */
+
+@-webkit-keyframes orb-hover-up-and-down {
+  0%   { top: +10%; }
+  100% { top: +15%; }
 }
