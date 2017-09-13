@@ -25,16 +25,32 @@
         <h1 id="sponsorTitle">We couldn't do it without them.</h1> 
         
     <!-- Begin main sponsor section -->
-        <div id="sponsorIntro">
-            <h2>Meet the sponsors who make HomeSafe great:</h2>
+        <div id="sponsorBlock">
+            <h3>Meet the sponsors who make HomeSafe great:</h3>
         </div>
         
     <!-- Collection of sponsor logos. All should be square or round, preferably solid-backed (not transparent)-->
         <div id="sponsorLogos">
-            <a href="#"><img class="sponsorLogo" id="logo1" src="http://cimansazan.com/wp-content/uploads/2015/10/company-icon-300.png"></a>
-            <a href="#"><img class="sponsorLogo" id="logo2" src="https://pbs.twimg.com/profile_images/491938761052135424/JxJIyIKA_400x400.png"></a>
-            <a href="#"><img class="sponsorLogo" id="logo3" src="http://images.all-free-download.com/images/graphicthumb/best_company_logos_modern_design_vector_548608.jpg"></a>
-            <a href="#"><img class="sponsorLogo" id="logo4" src="https://i.pinimg.com/736x/a0/95/ff/a095ff944304b8812a9788ad1f5c245c--lego-group-lego-brick.jpg"></a>
+            <a href="#"><img class="sponsorLogo" id="logo1" src="http://cimansazan.com/wp-content/uploads/2015/10/company-icon-300.png" alt="sponsor logo"></a>
+            <a href="#"><img class="sponsorLogo" id="logo2" src="https://pbs.twimg.com/profile_images/491938761052135424/JxJIyIKA_400x400.png" alt="sponsor logo"></a>
+            <a href="#"><img class="sponsorLogo" id="logo3" src="http://images.all-free-download.com/images/graphicthumb/best_company_logos_modern_design_vector_548608.jpg" alt="sponsor logo"></a>
+            <a href="#"><img class="sponsorLogo" id="logo4" src="https://i.pinimg.com/736x/a0/95/ff/a095ff944304b8812a9788ad1f5c245c--lego-group-lego-brick.jpg" alt="sponsor logo"></a>
+        </div>
+        
+    <!-- Invitation to sponsor -->
+        <div id="sponsorUs">
+            <h3>Interested in sponsoring us?</h3>
+            <h6>Get in touch.</h6>
+            <form class="contactForm" id="sponsorship" action="mailto:sponsor@example.com" method="post" enctype="text/plain">
+                <label for="fullname">Your full name:</label><br>
+                <input type="text" name="fullname" placeholder="Your name here..."><br><br>
+                <label for="email">Your email:</label><br>
+                <input type="text" name="email" placeholder="Your email here..."><br><br>
+                <label for="email">Your organization:</label><br>
+                <input type="text" name="organization" placeholder="Your organization here..."><br><br>
+                <input type="submit" value="Submit" onclick="return confirm('Thanks! We'll get in touch with you soon.')">
+                <input type="reset" value="Start over">
+            </form>
         </div>
     </body>
 </html>

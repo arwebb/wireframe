@@ -69,21 +69,21 @@
             </div>
             <!-- Buttons for Apple store, Google play -->
             <h4><span class="alt">Download</span> HomeSafe here:</h4>
-            <button type="button"><span id="play"></span><a href="#">Google Play</a></button>
-            <button type="button"><span id="apple"></span><a href="#">App Store</a></button>
+            <button type="button"><a href="#">Google Play</a></button>
+            <button type="button"><a href="#">App Store</a></button>
         </div>
         
     <!-- Contact page, with email form (currently mailed to phony placeholder account) -->
         <div id="contact">
             <h2><span class="alt">Contact </span>us:</h2>
             <!-- Contact us box -->
-            <form id="contact" action="mailto:staff@example.com" method="post" enctype="text/plain">
+            <form class="contactForm" id="general" action="mailto:staff@example.com" method="post" enctype="text/plain">
                 <label for="fullname">Your full name:</label><br>
                 <input type="text" name="fullname" placeholder="Your name here..."><br><br>
                 <label for="email">Your email:</label><br>
                 <input type="text" name="email" placeholder="Your email here..."><br><br>
                 <label for="request">Briefly describe your reason for contacting us:</label><br><br>
-                <textarea name="request" form="contact"></textarea><br><br>
+                <textarea name="request" form="general"></textarea><br><br>
                 <input type="submit" value="Submit" onclick="return confirm('Thanks! We'll get in touch with you soon.')">
                 <input type="reset" value="Start over">
             </form>
